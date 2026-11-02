@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbal Heaven | Handmade with Love</title>
+    <style>
+        :root {
+            --primary: #2d4a22;
+            --secondary: #606c38;
+            --light: #fefae0;
+            --dark: #283618;
+            --accent: #dda15e;
+            --bg: #faf9f6;
+            --text: #333333;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: white;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        nav a {
+            margin-left: 1.5rem;
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        .hero {
+            text-align: center;
+            padding: 5rem 2rem;
+            background: linear-gradient(135deg, #f4f1de 0%, #e0ebd1 100%);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .hero h1 em {
+            color: var(--secondary);
+            font-style: italic;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            padding: 0.8rem 2rem;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: background 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: var(--secondary);
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 3rem 2rem;
+            background: white;
+            text-align: center;
+        }
+
+        .feature-card {
+            flex: 1;
+            min-width: 250px;
+            margin: 1rem;
+            padding: 1.5rem;
+        }
+
+        .feature-card h3 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .garden-section {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .garden-section h2 {
+            color: var(--primary);
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+        }
+
+        .soap-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1.5rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .soap-badge {
+            background: white;
+            border: 1px solid #e0e0e0;
+            padding: 1.5rem;
+            border-radius: 8px;
+            font-weight: 600;
+            color: var(--dark);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+
+        .order-section {
+            background-color: white;
+            padding: 4rem 2rem;
+            max-width: 600px;
+            margin: 3rem auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .order-section h2 {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+
+        footer {
+            background-color: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+
+        footer a {
+            color: var(--light);
+            text-decoration: none;
+            margin: 0 0.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">🌿 Herbal Heaven</a>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#collection">Our Soaps</a>
+            <a href="#order">Order</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>A softer ritual. <em>A happier you.</em></h1>
+        <p>Bring a little everyday joy to your routine with Herbal Heaven handmade soaps — thoughtfully made, beautifully presented, and made to make your daily wash feel special.</p>
+        <a href="#collection" class="btn">Explore the soaps →</a>
+    </section>
+
+    <section class="features">
+        <div class="feature-card">
+            <h3>🌿 Nature-Inspired</h3>
+            <p>Every single bar is curated from nature-inspired familiar favourites.</p>
+        </div>
+        <div class="feature-card">
+            <h3>♡ Handmade with Love</h3>
+            <p>Thoughtfully blended small pauses for your busy daily lifestyle.</p>
+        </div>
+        <div class="feature-card">
+            <h3>₹ Simple Pricing</h3>
+            <p>10 lovely varieties, each strictly listed at just ₹100.</p>
+        </div>
+    </section>
+
+    <section id="collection" class="garden-section">
+        <h2>The Soap Garden</h2>
+        <p style="margin-bottom: 2rem;">Ten distinctive varieties, each with its own character. Choose your match.</p>
+        <div class="soap-grid">
+            <div class="soap-badge">Rose</div>
+            <div class="soap-badge">Jasmine</div>
+            <div class="soap-badge">Multani Mitti</div>
+            <div class="soap-badge">Chandan</div>
+            <div class="soap-badge">Neem</div>
+            <div class="soap-badge">Rice</div>
+            <div class="soap-badge">Coffee</div>
+            <div class="soap-badge">Orange</div>
+            <div class="soap-badge">Haldi Chandan</div>
+            <div class="soap-badge">Goat Milk & Honey</div>
+        </div>
+    </section>
+
+    <section id="order" class="order-section">
+        <h2>Place your order</h2>
+        <p style="text-align: center; margin-bottom: 1.5rem; color: #666;">Every soap is ₹100. Share details to format your WhatsApp checkout.</p>
+        <form id="soapOrderForm">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" required placeholder="Enter full name">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" required placeholder="Enter active contact number">
+            </div>
+            <div class="form-group">
+                <label for="address">Delivery Address</label>
+                <input type="text" id="address" required placeholder="Complete home/office address">
+            </div>
+            <div class="form-group">
+                <label for="variety">Choose Soap Variety</label>
+                <select id="variety" required>
+                    <option value="">Select a variety</option>
+                    <option value="Rose">Rose</option>
+                    <option value="Jasmine">Jasmine</option>
+                    <option value="Multani Mitti">Multani Mitti</option>
+                    <option value="Chandan">Chandan</option>
+                    <option value="Neem">Neem</option>
+                    <option value="Rice">Rice</option>
+                    <option value="Coffee">Coffee</option>
+                    <option value="Orange">Orange</option>
+                    <option value="Haldi Chandan">Haldi Chandan</option>
+                    <option value="Goat Milk & Honey">Goat Milk & Honey</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Quantity</label>
+                <input type="number" id="quantity" min="1" value="1" required>
+            </div>
+            <button type="submit" class="btn" style="width: 100%; margin-top: 1rem;">Send order on WhatsApp ↗</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© Herbal Heaven. All rights reserved. Handmade soap collection · ₹100 each</p>
+    </footer>
+
+    <script>
+        document.getElementById('soapOrderForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const address = document.getElementById('address').value;
+            const variety = document.getElementById('variety').value;
+            const quantity = document.getElementById('quantity').value;
+            
+            const text = `Hello Herbal Heaven! I'd like to place an order.%0A%0A*Order Details:*%0A- Soap: ${variety}%0A- Quantity: ${quantity}%0A%0A*Delivery Info:*%0A- Name: ${name}%0A- Phone: ${phone}%0A- Address: ${address}`;
+            
+            window.open(`https://wa.me/?text=${text}`, '_blank');
+        });
+    </script>
+</body>
+</html>
